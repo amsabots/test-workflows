@@ -19,5 +19,8 @@
   "homepage": "https://github.com/amsabots/test-workflows#readme",
   "dependencies": {
     "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }
