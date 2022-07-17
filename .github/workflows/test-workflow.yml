@@ -25,6 +25,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node_version }}
-      - name: Run tests scopes
       - run: npm install
       - run: npm test
