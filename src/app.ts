@@ -7,7 +7,7 @@ function minus(a: number, b: number) {
 }
 
 function divide(a: number, b: number) {
-  return a / b;
+  return Number(a) / Number(b);
 }
 
 export { add, minus, divide };
