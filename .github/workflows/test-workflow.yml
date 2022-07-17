@@ -26,4 +26,5 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
       - run: npm install
+      - run: npm install jest --global
       - run: npm test
