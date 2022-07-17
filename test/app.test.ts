@@ -1,10 +1,14 @@
-import { add } from "../src/app";
+import { add, minus } from "../src/app";
 
 const simulate_promisify = (duration = 3000) =>
   new Promise((resolve: any) => setTimeout(resolve("1"), duration));
 
 test("Add two numbers, a & b", () => {
   expect(add(1, 2)).toBe(3);
+});
+
+test("Subtraction between two numbers", () => {
+  expect(minus(2, 1)).toBe(1);
 });
 
 test("Object value equality", () => {
@@ -15,7 +19,7 @@ test("Object value equality", () => {
 
 test("null assertion", () => {
   const n = null;
-  expect(n).toBeFalsy();
+  expect(n).toBeTruthy();
 });
 test("Number equality", () => {
   const n = 3;
